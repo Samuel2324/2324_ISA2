@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('clone github repo') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
